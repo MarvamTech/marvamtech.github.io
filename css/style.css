@@ -1,0 +1,455 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url("../fonts/Minecraft.ttf");
+}
+
+body * {
+  transition: 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Minecraft', sans-serif;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
+
+a, p, li, span, label, input, textarea {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+}
+
+#but
+{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+#but:hover {
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: .8s;
+}
+
+#but span {
+  position: absolute;
+  display: block;
+}
+
+#but span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+#but:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.8s;
+}
+
+#but span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+#but:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.4s;
+  transition-delay: 0.5s;
+}
+
+#but span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+#but:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#but span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+#but:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+.make_bigger:hover {
+  transform: scale(1.04);
+}
+
+/* styles */
+
+.style_1, .style_2 {
+  z-index: -20;
+  padding-bottom: 150px;
+  margin: 0 auto;
+}
+
+.style_1 {
+  background-color: #272727;
+}
+
+.style_2 {
+  background-color: #454546;
+}
+
+/* hero */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 900px;
+  display: grid;
+  color: #fff;
+}
+
+.hero::before {
+  /* image */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	background-position: center;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/header/image_1.jpg');
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+}
+
+.hero_container {
+  z-index: 20;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;  /* align the content to the center of the image */ 
+  gap: 1em;
+  text-align: center;
+}
+
+.hero_title {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #2091f9;
+  justify-self: center; /* center it and size will not be all the width of the container  */
+  color: #fff;
+  padding: 13px 40px; /* add extra space to make it with more color */
+  border-radius: 32px;
+}
+
+/* articles */
+
+.about_container {
+  padding-top: 50px; /* space between the element of the grid and the paragraph of the top */
+  display: grid;
+  width: 100%;
+  gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(320px, auto)); /* repeat as many columns as possible with a minimun size of 320px */
+}
+
+.about_post {
+  border-radius: 15px;
+  padding: 30px;
+  display: grid;
+  width: 320px; 
+  margin: 0 auto; 
+  /* shadow */
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px 5px rgba(0,0,0,0.75);
+  /* gradient */
+  background: rgb(28,0,59);
+  background: linear-gradient(90deg, rgba(28,0,59,1) 0%, rgba(75,3,116,1) 50%, rgba(127,0,178,1) 100%);
+}
+
+.about_post:hover {
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(71,238,186,1);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(23,115,212,1);
+	box-shadow: 0px 3px 3px 5px rgba(0,178,149,1);
+}
+
+.about_title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 0 !important;
+}
+
+.about_paragraph {
+  line-height: 1.7;
+  font-size: 19px;
+  color: white;
+}
+
+/* smps */
+
+.smps_container {
+  padding-top: 50px; /* space between the element of the grid and the paragraph of the top */
+  display: grid;
+  width: 100%;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto)); /* repeat as many columns as possible with a minimun size of 400px */
+}
+
+.smps_subtitle {
+  padding-top: 20px;
+  font-style: italic;
+}
+
+.smps_post {
+  border-radius: 15px;
+  padding: 30px;
+  display: grid;
+  width: 400px; 
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  /* shadow */
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px 5px rgba(0,0,0,0.75);
+  /* gradient */
+  background: rgb(30,61,210);
+  background: linear-gradient(90deg, rgba(30,61,210,1) 0%, rgba(13,92,175,1) 50%, rgba(20,121,131,1) 100%);
+}
+
+.smps_post:hover {
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(102,103,110,1);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(181,184,187,1);
+	box-shadow: 0px 3px 3px 5px rgba(214,227,228,1);
+}
+
+.smps_title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 0 !important;
+}
+
+.smps_title:hover {
+  color: #fa3757;
+}
+
+.smps_paragraph {
+  line-height: 1.7;
+  font-size: 19px;
+  color: white;
+}
+
+/* questions */
+
+.questions {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.questions_container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2em;
+  padding-top: 50px;
+}
+
+.questions_padding {
+  background-color: white;
+  padding: 0;
+  transition: padding .3s;
+  border: 3px solid #5454d4;
+  border-radius: 6px;
+}
+
+.questions_padding--add {
+  padding-bottom: 30px;
+}
+
+.questions_answer {
+  padding: 0 30px 0;
+  overflow: hidden;
+}
+
+.questions_title {
+  font-family: 'Russo One', sans-serif;
+  text-align: left;
+  color: #001a49;
+  display: flex;
+  font-size: 20px;
+  padding: 30px 0 30px ; /* make it bigger top and bottom */
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.questions_title:hover {
+  color: #ff0080;
+}
+
+.questions_arrow {
+  border-radius: 50%;
+  background-color: #001a49;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-self: flex-end;
+  margin-left: 10px;
+  transition: transform .3s;
+}
+
+.questions_arrow--rotate {
+  transform: rotate(180deg);
+}
+
+.questions_show {
+  text-align: left;
+  height: 0;
+  transition: height .3s;
+}
+
+.questions_img {
+  display: block;
+}
+
+.questions_copy {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/* credits */
+
+.credits_main_title {
+  padding-bottom: 30px;
+}
+
+.credits_category_title {
+  font-family: 'Russo One', sans-serif;
+  margin-bottom: 40px;
+}
+
+.credits_title {
+  margin-bottom: 10px;
+  padding-top: 0 !important;
+}
+
+.credits_badge {
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.credits_icon {
+  border-radius: 15px;
+  display: grid;
+  width: 160px; 
+  margin: 0 auto; 
+  margin-bottom: 20px;
+}  
+
+.credits_hr {
+  background-color: #a7a7a7; 
+  width: 90%; 
+  margin: 0 auto;
+}
+
+.credits_icon {
+  width: 150px;
+  height: 150px;
+}
+
+.credits_paragraph {
+  line-height: 1.7;
+  font-size: 19px;
+}
+
+/* footer  */
+
+.footer {
+  background-color: #1d293f;
+}
+
+.footer_container {
+  display: grid;
+}
+
+.footer_join {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+/* media */
+
+@media screen and (max-width: 400px) {
+  .smps_container, .about_container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  }
+  .smps_post, .about_post {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .smps_container, .about_container {
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+  }
+  .smps_post, .about_post {
+    width: 320px;
+  }
+}
+
+
+@media screen and (max-width: 1055px) {
+  .about_last {
+    grid-column: 1 / -1; 
+  } 
+}
+
+@media screen and (max-width: 1231px) {
+  .smps_last {
+    grid-column: 1 / -1;
+  }
+  .smps_title, .about_title {
+    font-size: 1.2em;
+  }
+  .smps_paragraph, .about_paragraph {
+    font-size: 1em;
+  }
+}
