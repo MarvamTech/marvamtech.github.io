@@ -20,6 +20,7 @@ a, p, li, span, label, input, textarea {
   font-family: 'Fira Sans', sans-serif;
   font-size: 20px;
   font-weight: 200;
+  color: #fff;
 }
 
 a {
@@ -228,7 +229,7 @@ a {
   display: grid;
   width: 100%;
   gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto)); /* repeat as many columns as possible with a minimun size of 400px */
+  grid-template-columns: repeat(auto-fit, minmax(380px, auto)); /* repeat as many columns as possible with a minimun size of 380px */
 }
 
 .smps_subtitle {
@@ -240,7 +241,7 @@ a {
   border-radius: 15px;
   padding: 30px;
   display: grid;
-  width: 400px; 
+  width: 380px; 
   margin: 0 auto; 
   margin-bottom: 20px;
   /* shadow */
@@ -270,8 +271,18 @@ a {
 
 .smps_paragraph {
   line-height: 1.7;
+}
+
+.smps_ghostech_paragraph {
+  font-size: 20px;
+}
+
+.smps_bolillocraft_paragraph {
   font-size: 19px;
-  color: white;
+}
+
+.smps_revolucionline_paragraph {
+  font-size: 22px;
 }
 
 /* questions */
@@ -413,6 +424,10 @@ a {
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 20px;
+}
+
+.footer_repository {
+  margin: 0 auto;
 }
 
 /* media */
