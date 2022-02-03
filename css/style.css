@@ -464,7 +464,8 @@ a {
   .smps_title, .about_title {
     font-size: 1.2em;
   }
-  .smps_paragraph, .about_paragraph {
+  
+  .about_paragraph {
     font-size: 1em;
   }
 }
