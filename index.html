@@ -19,9 +19,60 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href="css/normalize.css" rel="stylesheet" type="text/css" />
 
+  <script
+    src="https://kit.fontawesome.com/7e5b2d153f.js"
+    crossorigin="anonymous"
+  ></script>
+
 </head>
 
 <body>
+
+  <header class="header">
+
+    <nav class="nav">
+
+      <button class="nav-toggle" aria-label="Abrir menú">
+
+        <i class="fas fa-bars"></i>
+
+      </button>
+
+      <ul class="nav-menu">
+
+        <li class="nav-menu-item">
+
+          <a href="#intro" class="nav-menu-link nav-link">Introduccion</a>
+
+        </li>
+
+        <li class="nav-menu-item">
+
+          <a href="#smps" class="nav-menu-link nav-link">SMPS</a>
+
+        </li>
+
+        <li class="nav-menu-item">
+
+          <a href="#faq" class="nav-menu-link nav-link">Preguntas frecuentes</a>
+
+        </li>
+
+        <li class="nav-menu-item">
+
+          <a href="#credits" class="nav-menu-link nav-link nav-menu-link_active">Creditos</a>
+          
+        </li>
+
+        <li class="nav-menu-item">
+
+          <a href="#footer" class="nav-menu-link nav-link nav-menu-link_active">Pie de pagina</a>
+
+        </li>
+        
+      </ul>
+    </nav>
+  </header>
 
 	<header class="hero style_1">
 
@@ -41,7 +92,7 @@
 
 	</header>
 
-	<section class="about style_2">
+	<section id="intro" class="about style_2">
 
 		<h1 class="title_style">Introduccion a Marvam</h1>
 
@@ -72,7 +123,7 @@
 		</div>
 	</section>
 
-	<section class="smps style_1">
+	<section id="smps" class="smps style_1">
 
 		<h1 class="smps_main_title title_style">Servidores SMPS recomendados</h1>
 
@@ -103,7 +154,7 @@
 
 	</section>
 
-  <section class="questions style_2">
+  <section id="faq" class="questions style_2">
 
     <h1 class="questions_main_title title_style">Preguntas frecuentes</h1>
 
@@ -125,56 +176,71 @@
 
       </article>
 
-        <article class="questions_padding">
+      <article class="questions_padding">
 
-          <div class="questions_answer">
+        <div class="questions_answer">
 
-            <h3 class="questions_title">Si quiero mostrar alguna construccion o granja, ¿Donde la envio?
-              <span class="questions_arrow">
-                <img src="images/arrows/arrow.svg" class="questions_img">
-              </span>
-            </h3>
+          <h3 class="questions_title">Si quiero mostrar alguna construccion o granja, ¿Donde la envio?
+            <span class="questions_arrow">
+              <img src="images/arrows/arrow.svg" class="questions_img">
+            </span>
+          </h3>
 
-            <p class="questions_show">El canal 📁￤envio-de-contenido tiene como finalidad la muestra de construcciones o granjas las cuales pueden aparecer en algun canal del servidor. Inclusive, el resto de la comunidad puede dar su opinion constructiva en el canal 🤔￤opinion-contenido. Si tienes alguna creacion guardada y quieres compartirla con todos nosotros ponla en ese canal y vemos si es apta para ponerla en este servidor. Por el contrario, para mostrar algun progreso en tu mundo, ya sea granja, construccion, etc, puedes compartirlo directo por el chat general. </p>
+          <p class="questions_show">El canal 📁￤envio-de-contenido tiene como finalidad la muestra de construcciones o granjas las cuales pueden aparecer en algun canal del servidor. Inclusive, el resto de la comunidad puede dar su opinion constructiva en el canal 🤔￤opinion-contenido. Si tienes alguna creacion guardada y quieres compartirla con todos nosotros ponla en ese canal y vemos si es apta para ponerla en este servidor. Por el contrario, para mostrar algun progreso en tu mundo, ya sea granja, construccion, etc, puedes compartirlo directo por el chat general. </p>
 
-          </div>
-          
-        </article>
+        </div>
+        
+      </article>
 
-        <article class="questions_padding">
+      <article class="questions_padding">
 
-          <div class="questions_answer">
+        <div class="questions_answer">
 
-            <h3 class="questions_title">En los canales sobre granjas hay muchas, ¿Cual de todas hago?
-              <span class="questions_arrow">
-                <img src="images/arrows/arrow.svg" class="questions_img">
-              </span>
-            </h3>
+          <h3 class="questions_title">En los canales sobre granjas hay muchas, ¿Cual de todas hago?
+            <span class="questions_arrow">
+              <img src="images/arrows/arrow.svg" class="questions_img">
+            </span>
+          </h3>
 
-            <p class="questions_show">En estos canales, hay granjas mas sencillas con una baja produccion y otras mas complejas con una tasa de produccion mas alta. Recomendamos hacer la que mejor se ajuste a tus necesidades; se puede iniciar por una granja sencilla y luego hacer una mas grande para una mejor produccion. Ademas, es recomendable realizar las granjas mas recientes subidas al canal para evitar que este obsoleta por los cambios de versiones, sobre todo si esta utiliza mecanismos de 0 ticks o mecanicas de spawneo de mobs avanzadas. Por cualquier consulta, no dudes en preguntarlo en el chat general.</p>
+          <p class="questions_show">En estos canales, hay granjas mas sencillas con una baja produccion y otras mas complejas con una tasa de produccion mas alta. Recomendamos hacer la que mejor se ajuste a tus necesidades; se puede iniciar por una granja sencilla y luego hacer una mas grande para una mejor produccion. Ademas, es recomendable realizar las granjas mas recientes subidas al canal para evitar que este obsoleta por los cambios de versiones, sobre todo si esta utiliza mecanismos de 0 ticks o mecanicas de spawneo de mobs avanzadas. Por cualquier consulta, no dudes en preguntarlo en el chat general.</p>
 
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="questions_padding">
+      <article class="questions_padding">
 
-          <div class="questions_answer">
+        <div class="questions_answer">
 
-            <h3 class="questions_title">Tengo sugerencias para mejorar el servidor y/o la web, ¿Que hago?
-              <span class="questions_arrow">
-                <img src="images/arrows/arrow.svg" class="questions_img">
-              </span>
-            </h3>
+          <h3 class="questions_title">Tengo sugerencias para mejorar el servidor y/o la web, ¿Que hago?
+            <span class="questions_arrow">
+              <img src="images/arrows/arrow.svg" class="questions_img">
+            </span>
+          </h3>
 
-            <p class="questions_show">En el canal 🧐￤sugerencias escribiendo .suggest seguido de tu sugerencia podras subirla. En este canal se admiten sugerencias o bien sobre el servidor de Discord o bien sobre la pagina web. Como extra, puedes pasarte por 🥳￤autoroles y obtener el rol〘🌐〙Pagina Web para enterarte sobre todos los cambios que surgen en la web</p>
+          <p class="questions_show">En el canal 🧐￤sugerencias escribiendo .suggest seguido de tu sugerencia podras subirla. En este canal se admiten sugerencias o bien sobre el servidor de Discord o bien sobre la pagina web. Como extra, puedes pasarte por 🥳￤autoroles y obtener el rol〘🌐〙Pagina Web para enterarte sobre todos los cambios que surgen en la web</p>
 
-          </div>
-        </article>
+        </div>
+      </article>
 
-      </section>
+      <article class="questions_padding">
+
+        <div class="questions_answer">
+
+          <h3 class="questions_title">¿Que significa Marvam Tech.?
+            <span class="questions_arrow">
+              <img src="images/arrows/arrow.svg" class="questions_img">
+            </span>
+          </h3>
+
+          <p class="questions_show">Deriva de la combinacion de los nombres de los 3 creadores del servidor: Marcraft, Ivan, Mesa. Por otro lado, "Tech" es la abreviacion de technical o en español tecnico</p>
+
+        </div>
+      </article>
+
+    </section>
   </section>
 
-	<section class="credits style_1">
+	<section id="credits" class="credits style_1">
 
 		<h1 class="credits_main_title title_style">Creditos</h1>
 
@@ -298,10 +364,10 @@
 
   </section>
 
-  <section class="footer">
+  <section id="footer" class="footer">
 
     <footer class="footer_container">
-        <h1>Preparate para unirte a la mejor comunidad de Minecraft Bedrock</h1>
+        <h1>Preparate para unirte al mejor servidor de Discord sobre Minecraft Bedrock tecnico</h1>
         <a target="_blank" class="footer_join" href="https://discord.gg/tTZYQnHEZk" id="but" >
 
           <span></span>
@@ -325,6 +391,7 @@
   </section>
 
   <script src="js/questions.js"></script>
+  <script src="js/nav.js"></script>
 
 </body>
 
