@@ -35,6 +35,28 @@ a {
   text-decoration: none;
 }
 
+/* go up button */
+
+#go-up-button {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e62739;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 150;
+}
+
+#go-up-button:active {
+  background: #cc2333;
+}
+
 /* nav bar */
 
 .header {
@@ -44,8 +66,7 @@ a {
   height: 80px;
   width: 100%;
   position: absolute;
-  /* top: 0;
-  left: 0; */
+  top: 0;
   z-index: 100;
 }
 
@@ -100,7 +121,6 @@ a {
   font-size: 30px;
   line-height: 60px;
   cursor: pointer;
-
   display: none;
 }
 
@@ -556,14 +576,18 @@ a {
   }
 
   .header {
+    position: fixed;
+  }
+
+  .header {
     height: 60px;
   }
 
-  .logo {
+  /* .logo {
     font-size: 25px;
     padding: 0 20px;
     line-height: 60px;
-  }
+  } */
 
   .nav-menu {
     flex-direction: column;
@@ -574,22 +598,14 @@ a {
     top: 60px;
     width: 100%;
     padding: 20px 0;
-
     height: calc(100% - 60px);
     overflow-y: auto;
-
     left: 100%;
     transition: left 0.3s;
   }
 
   .nav-menu-item {
     line-height: 70px;
-  }
-
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
-    background: none;
-    color: #83c5f7;
   }
 
   .nav-toggle {
@@ -600,7 +616,4 @@ a {
     left: 0;
   }
 
-  .nav-toggle:focus:not(:focus-visible) {
-    outline: none;
-  }
 }
